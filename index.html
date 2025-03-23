@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1720e88bd2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imges/logo.png" class="logo">
+                <ul  id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Certificates</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times"  onclick="closemenu()"></i>                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <span>Manasa</span></h1>
+                <p>I am a Fresher Front-End Developer.<br> I love building responsive and interactive websites<br>using HTML, CSS, JavaScript, and React.</p>               
+                <p>Welcome to my portfolio! <br>Feel free to explore my projects and learn more about me.</p>
+            </div>
+        </div>
+    </div>
+<!---------------------about ------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title ">About Me</h1>
+                    <p>Hello! I'm <strong>Manasa</strong>, a passionate and aspiring <strong>Front-End Developer (Fresher)</strong> with a strong interest in building visually appealing, responsive, and user-friendly websites.</p>
+                    <p>I enjoy working with technologies like <strong>HTML, CSS, JavaScript, and React</strong> to bring creative ideas to life. My goal is to continuously improve my skills, learn new technologies, and contribute to exciting web projects.</p>
+                    <p>Besides coding, I enjoy exploring the latest trends in web development and enhancing my problem-solving abilities.</p>
+                    <p>Feel free to check out my projects and reach out to me if you'd like to collaborate!</p>
+
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="openTab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience', event)">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education', event)">Education</p>
+                    </div>
+                    
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web technologies</span><br> HTML, CSS, JavaScript, MongoDB, React.js, Node.js,<br> Express.js, MySQL, SQL, PHP, API</li>
+                            <li><span>Artificial Intelligence (AI):</span><br>AI Algorithms, Bayesian Network,<br> Reinforcement Learning, AI Search Algorithms</li>
+                            <li><span>Machine Learning (ML):</span><br>Supervised Learning, Unsupervised Learning</li>
+                            <li><span>Data Mining:</span><br>Mining Algorithms, Clustering Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <p>I began my front-end development journey during my Diploma industrial training,<br>
+                               where I created a web page for a training company<br>
+                               and gained valuable experience in front-end development using React.
+                            </p>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>
+                            <strong>Diploma:</strong> AANM & VVRSR POLYTECHNIC, GUDLAVALLERU</li>
+                            <li><span>Currently Pursuing:</span><br><strong>B.Tech:</strong> Seshadri Rao Gudlavalleru Engineering College, specializing in Artificial Intelligence and Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+<!--------------------------services------------------------>
+<div id="Services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive and interactive websites using HTML, CSS, JavaScript, and React.</p>
+             <a href="#">learn more</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h3>UI/UX Design</h3>
+            <p>Designing user-friendly interfaces with clean and modern aesthetics for better user experience.</p>
+             <a href="#">learn more</a>
+        </div>
+        <div class="service-card">
+            <i class="fa-brands fa-react"></i>
+            <h3>React Development</h3>
+            <p>Creating dynamic web applications using React for fast and seamless user experiences.</p>
+            <a href="#">learn more</a>
+        </div>
+    </div>
+</div>
+</div>
+<!--------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Certificates </h1>
+        <div class="grid">
+            <div class="item">
+                <h2>Generative AI (Google Cloud)</h2>
+                <a href="certificate/generative ai.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="item">
+                <h2>React (IBM edX)</h2>
+                <a href="certificate/react.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="item">
+                <h2>Artificial Intelligence (SmartInternz)</h2>
+                <a href="certificate/ai.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="item">
+                <h2>industrial training</h2>
+                <a href="certificate/Industrial training certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact_left">
+                <h1 class="sub_title">contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>contact:puritipatimanasa@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9392076624</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="certificate/P manasa- Fresher.pdf" download class="btn btn2"> my resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ JavaScript for Tabs --------->
+
+<script>
+// JavaScript for Tabs
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-content");
+
+function openTab(tabname, event) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+
+// JavaScript for Mobile Menu Toggle
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() { 
+    sidemenu.style.right = "0";
+}
+
+function closemenu() { 
+    sidemenu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwI-erAdrfsPvIHJWgPHnabLhf6h4-XzPX51D61Z06nG2FGcl8aO0AOL557D7eFhxpQ8A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+</script>
+</body>
+</html>
